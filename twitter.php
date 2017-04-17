@@ -13,8 +13,6 @@
 
 require "vendor/autoload.php";
 
-use Abraham\TwitterOAuth\TwitterOAuth;
-
 include "twitter-settings.php";
 
 
