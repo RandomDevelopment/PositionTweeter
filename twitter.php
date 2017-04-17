@@ -9,17 +9,25 @@
 
 
 
-
+function tweet($tweet){
 
 require "vendor/autoload.php";
 
-include "twitter-settings.php";
+require "twitter-settings.php";
 
 
+$url = 'https://api.twitter.com/1.1/statuses/update.json';
+$requestMethod = 'POST';
 
+$postfields = array(
+    'status' => $tweet, 
+);
 
+$twitter = new TwitterAPIExchange($settings);
+echo $twitter->buildOauth($url, $requestMethod)
+    ->setPostfields($postfields)
+    ->performRequest();
 
-$connection = new TwitterOAuth(CONSUMER_KEY, CONSUMER_SECRET, $access_token, $access_token_secret);
-$content = $connection->get("account/verify_credentials");
+}
 
 ?>
