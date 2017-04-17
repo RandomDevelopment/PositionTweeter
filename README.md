@@ -9,10 +9,3 @@ Todo
  - Make thing for topmclist connection 
  - verbage (polish) 
 
-
-
- Things to learn quickly 
- -----
- - uniformsevrer
- - use composer
- - use https://twitteroauth.com
