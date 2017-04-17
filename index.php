@@ -1,1 +1,5 @@
-it's alive!
+<? php
+
+echo "is this online?";
+
+?>
