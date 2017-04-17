@@ -13,6 +13,6 @@ Todo
 
  Things to learn quickly 
  -----
- - use easyphp.org deveserver 
+ - uniformsevrer
  - use composer
  - use https://twitteroauth.com
