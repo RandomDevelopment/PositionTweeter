@@ -27,20 +27,26 @@ html("<br>");
 $int = 0;
 
 
-while($int < 9){
+while($int < 10){
 	$int++;
 	$junk = topmclist_rank_grab($int);
 	html("<pre>");
 	print_r($junk);
 	html("</pre>");
 	html("<br>");
+	$newjunk[$int]["Name"] = $junk->data->name;
+	$newjunk[$int]["ID"] = $junk->data->ID;
 }
 
+html("<br>");
+html("<br>");
+html("<br>");
+html("<br>");
+ 
+html("<p class='h1'> Combined</p>");
 
-
-$junk = topmclist_rank_grab(1);
 html("<pre>");
-print_r($junk);
+print_r($newjunk);
 html("</pre>");
 
 
