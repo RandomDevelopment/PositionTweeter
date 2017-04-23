@@ -10,9 +10,25 @@ class ComposerStaticInitacca5421628b754445cfd48cd99b465f
         'aca594cec0c196659a3b7d4dc2665c0b' => __DIR__ . '/..' . '/j7mbo/twitter-api-php/TwitterAPIExchange.php',
     );
 
+    public static $prefixLengthsPsr4 = array (
+        'M' => 
+        array (
+            'Medoo\\' => 6,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'Medoo\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/catfan/medoo/src',
+        ),
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
+            $loader->prefixLengthsPsr4 = ComposerStaticInitacca5421628b754445cfd48cd99b465f::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitacca5421628b754445cfd48cd99b465f::$prefixDirsPsr4;
 
         }, null, ClassLoader::class);
     }
