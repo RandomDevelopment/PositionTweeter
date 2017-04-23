@@ -3,7 +3,7 @@
 // quick tweet tester
 
 
-require "functions.php";
+require "init.php";
 if(isset($_GET["tweet"])){
 	tweet($_GET["tweet"]);
 	header("Location: /test.php");
@@ -44,5 +44,12 @@ html("    <button id=\"singlebutton\" type=\"submit\" class=\"btn btn-info\">twe
 html("  </div>");
 html("</form>");
 html("</div>");
+
+$database->insert("account", [
+	"user_name" => "foo",
+	"email" => "foo@bar.com",
+	"age" => 25
+]);
+
 
 ?>

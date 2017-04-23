@@ -9,7 +9,6 @@
 // Make sure you setup twitter-settings.php!
 
 function tweet($tweet){
-	require "vendor/autoload.php";
 	require "twitter-settings.php";
 	$url = 'https://api.twitter.com/1.1/statuses/update.json';
 	$requestMethod = 'POST';
