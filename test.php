@@ -45,11 +45,7 @@ html("  </div>");
 html("</form>");
 html("</div>");
 
-$database->insert("account", [
-	"user_name" => "foo",
-	"email" => "foo@bar.com",
-	"age" => 25
-]);
+
 
 
 ?>
