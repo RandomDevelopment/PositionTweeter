@@ -21,4 +21,13 @@ function tweet($tweet){
 	    ->performRequest();
 }
 
+
+function topmclist_rank_grab($rank){
+	require "topmclist-settings.php";
+	$key = $tmclsettings['key'];
+	$return = json_decode(file_get_contents("http://topmclist.com/API?Key=".$key."&Type=Get_Server_By_Rank&Rank=".$rank));
+	return $return;
+
+}
+
 ?>
