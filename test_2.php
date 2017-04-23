@@ -14,7 +14,7 @@ $database = new Medoo([
 
 
 
-//print_r($database->info());
+print_r($database->info());
 
 
 ?>
