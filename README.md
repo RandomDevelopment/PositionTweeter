@@ -1,11 +1,5 @@
 # PositionTweeter
 tweets positions changes from topmclist
 
-Todo
-----
 
-
- - Make thing for twitter connection
- - Make thing for topmclist connection 
- - verbage (polish) 
-
+make an [issue](https://github.com/RandomDevelopment/PositionTweeter/issues/new) with your idea!
